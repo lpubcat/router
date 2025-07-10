@@ -130,7 +130,7 @@ export default {
       error: null,
     }
   },
-  beforeRouteEnter(to, from, next) {
+  async beforeRouteEnter(to, from, next) {
     try {
       const post = await getPost(to.params.id)
       // `setPost` 方法定义在下面的代码中
